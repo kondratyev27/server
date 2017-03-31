@@ -15,7 +15,6 @@
 
 int main()
 {
-       std :: cout << "text";
     TcpServer tServ;
     UdpServer uServ;
 
