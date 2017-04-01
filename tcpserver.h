@@ -9,6 +9,10 @@ class TcpServer: public Server{
 public:
     TcpServer();
     void* start() override;
+
+    static bool sendMsg(std::string msg, int _sockD );
+    static std::string recieveMsg(int _sockD);
+
     ~TcpServer();
 };
 

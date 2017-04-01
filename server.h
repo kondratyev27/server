@@ -13,7 +13,7 @@ class Server
     std::string procolName;
 protected:
     const int hostPort = 4321;
-    const int bufSize = 64*1024;
+    static const int bufSize = 64*1024;
     int sockD;
     bool errorFlag;
     void setError(const std::string &errMesg);
